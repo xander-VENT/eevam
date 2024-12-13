@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5DC; /* Color hueso */
+    color: #2E8B57; /* Verde */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2E8B57;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #2E8B57;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    background-color: #FFF;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.contact-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #1DA851;
+}
+
+footer {
+    background-color: #F5F5DC;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-info {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.footer-info h4 {
+    font-size: 18px;
+    color: #2E8B57;
+}
+
+.footer-info p {
+    font-size: 14px;
+    color: #555;
+}
