@@ -142,14 +142,15 @@ footer {
     .product {
         border: 1px solid #ddd; /* Mantiene el borde existente */
         border-radius: 8px; /* Bordes redondeados */
-        padding: 8px; /* Espacio interno reducido */
+        padding: 5px; /* Espacio interno reducido */
         text-align: center; /* Centrar contenido */
+        width:160px;
     }
 
     .product img {
         width: 100%; /* Ajustar imágenes al tamaño del recuadro */
         height: auto;
-        margin-bottom: 8px; /* Espacio debajo de la imagen */
+        margin-bottom: 5px; /* Espacio debajo de la imagen */
     }
 
     .product h3, .product p {
