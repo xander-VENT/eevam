@@ -131,7 +131,7 @@ footer {
 
 /* Responsividad */
 @media (max-width: 768px) {
-    
+    @media (max-width: 768px) {
     .product-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Dos columnas */
@@ -150,6 +150,7 @@ footer {
     .product img {
         width: 100%;
         border-radius: 5px; /* Bordes redondeados para las imágenes */
+    }
     }
     .menu-toggle {
         display: block;
