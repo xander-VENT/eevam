@@ -1,16 +1,61 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #F5F5DC; /* Color hueso */
-    color: #2E8B57; /* Verde */
+    color:#196F3D; /* Verde */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #2E8B57;
+    background-color: #196F3D;
     color: white;
     padding: 20px;
     text-align: center;
+    position: relative;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #196F3D;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Para que se muestre el menú cuando se haga clic */
+.menu.show {
+    display: flex;
 }
 
 .product-list {
@@ -22,7 +67,7 @@ header {
 }
 
 .product {
-    border: 1px solid #2E8B57;
+    border: 1px solid #196F3D;
     border-radius: 8px;
     padding: 10px;
     text-align: center;
@@ -42,7 +87,7 @@ header {
 }
 
 .whatsapp-button {
-    background-color: #25D366;
+    background-color: #196F3D;
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -53,7 +98,7 @@ header {
 }
 
 .whatsapp-button:hover {
-    background-color: #1DA851;
+    background-color: #196F3D;
 }
 
 footer {
@@ -65,20 +110,41 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
 .footer-info {
     flex: 1;
-    padding: 0 10px;
+    padding: 10px;
 }
 
 .footer-info h4 {
     font-size: 18px;
-    color: #2E8B57;
+    color: #196F3D;
 }
 
 .footer-info p {
     font-size: 14px;
     color: #555;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.show {
+        display: flex;
+    }
 }
