@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="sueter.css">
+</head>
+<body>
+    <header>
+        <h1>EEVAM</h1>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        <nav class="menu">
+            <ul>
+                <li><a href="#index.html">Inicio</a></li>
+                <li><a href="#chico.html">Infantil</a></li>
+                <li><a href="#chamarras.html">Chamarras</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos" class="product-list">
+            <div class="product">
+                <img src="mol1.jpg" alt="Playera blanca">
+                <h3>Playera Prime</h3>
+                <p>$64.90</p>
+            </div>
+            <div class="product">
+                <img src="mol2.jpg" alt="Playera negra">
+                <h3>Playera Prime</h3>
+                <p>$64.90</p>
+            </div>
+            <div class="product">
+                <img src="mol3.jpg" alt="Playera azul">
+                <h3>Playera London</h3>
+                <p>$74.90</p>
+            </div>
+            <div class="product">
+                <img src="mol4.jpg" alt="Playera blanca">
+                <h3>Playera Prime</h3>
+                <p>$64.90</p>
+            </div>
+            <div class="product">
+                <img src="mol5.jpg" alt="Playera negra">
+                <h3>Playera Prime</h3>
+                <p>$64.90</p>
+            </div>
+            <div class="product">
+                <img src="mol6.jpg" alt="Playera azul">
+                <h3>Playera London</h3>
+                <p>$74.90</p>
+            </div>
+            <!-- Agrega más productos si es necesario -->
+        </section>
+
+        <div class="contact-button" id="contacto">
+            <a href="https://wa.me/522461306552" target="_blank" class="whatsapp-button">
+                Contactar por WhatsApp
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>Contacto</h4>
+                <p>Atención a clientes en línea</p>
+            </div>
+            <div class="footer-info">
+                <h4>Información</h4>
+                <p>Santa Ana Chiautempan Tlaxcala</p>
+                <p>Preguntas Frecuentes</p>
+            </div>
+            <div class="footer-info">
+                <h4>Redes Sociales</h4>
+                
+                <p><a href="https://www.instagram.com/eevam_oficial/" target="_blank">Instagram</a></p>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para controlar el menú -->
+   <script>
+    // Script para manejar la apertura y cierre del menú
+    const menuToggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    const menuLinks = document.querySelectorAll('.menu a');
+
+    // Abrir o cerrar el menú al hacer clic en el botón
+    menuToggle.addEventListener('click', function() {
+        menu.classList.toggle('show');
+    });
+
+    // Cerrar el menú cuando se hace clic en un enlace
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            menu.classList.remove('show');
+        });
+    });
+</script>
+</body>
+</html>
