@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda EEVAM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5F5DC; /* Color hueso */
+            color: #196F3D; /* Verde */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #196F3D;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .menu {
+            display: none;
+            flex-direction: column;
+            background-color: #196F3D;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu-toggle {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .menu.show {
+            display: flex;
+        }
+
+        .product-list {
+            display: grid;
+            grid-template-columns: 1fr; /* Un producto por fila */
+            margin: 20px;
+            gap: 20px;
+        }
+
+        .product {
+            border: 1px solid #196F3D;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+            background-color: #FFF;
+        }
+
+        .product .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .product img {
+            width: 45%; /* Ajustar imágenes al tamaño */
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .contact-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .whatsapp-button {
+            background-color: #196F3D;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #145A32;
+        }
+
+        footer {
+            background-color: #F5F5DC;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .footer-info {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .footer-info h4 {
+            font-size: 18px;
+            color: #196F3D;
+        }
+
+        .footer-info p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Responsividad */
+        @media (max-width: 720px) {
+            .product-list {
+                grid-template-columns: 1fr;
+            }
+
+            .product img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EEVAM</h1>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="chico.html">Infantil</a></li>
+                <li><a href="chamarras.html">Chamarras</a></li>
+<li><a href="duos.html">Navideño Duo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos" class="product-list">
+            <div class="product">
+                <div class="image-container">
+                    <img src="mol1.jpg" alt="Playera blanca - frontal">
+                    <img src="mol1-back.jpg" alt="Playera blanca - trasera">
+                </div>
+                <h3>Playera Prime</h3>
+                <p>$64.90</p>
+            </div>
+            <div class="product">
+                <div class="image-container">
+                    <img src="mol2.jpg" alt="Playera negra - frontal">
+                    <img src="mol2-back.jpg" alt="Playera negra - trasera">
+                </div>
+                <h3>Playera London</h3>
+                <p>$74.90</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h4>Contacto</h4>
+                <p>Atención a clientes en línea</p>
+            </div>
+            <div class="footer-info">
+                <h4>Información</h4>
+                <p>Santa Ana Chiautempan Tlaxcala</p>
+            </div>
+            <div class="footer-info">
+                <h4>Redes Sociales</h4>
+                <p><a href="https://www.instagram.com/eevam_oficial/" target="_blank">Instagram</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', function() {
+            menu.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
