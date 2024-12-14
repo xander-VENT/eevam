@@ -130,8 +130,8 @@ footer {
 }
 
 /* Responsividad */
-@media (max-width: 768px) {
-    @media (max-width: 768px) {
+@media (max-width: 720px) {
+    @media (max-width: 720px) {
     .product-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Dos columnas */
