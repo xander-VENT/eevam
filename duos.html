@@ -82,13 +82,13 @@
         }
 
         .product .image-container {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
+            display: flex; /* Alinea las imágenes horizontalmente */
+            justify-content: center; /* Centra las imágenes horizontalmente */
+            gap: 10px; /* Espacio entre las imágenes */
         }
 
         .product img {
-            width: 100%; /* Ajustar imágenes al tamaño */
+            width: 48%; /* Ajustar imágenes para que ocupen 48% del ancho */
             height: auto;
             border-radius: 5px;
         }
@@ -142,23 +142,17 @@
         }
 
         /* Responsividad */
-        /* Responsividad */
-@media (max-width: 720px) {
-    .product-list {
-        grid-template-columns: 1fr;
-    }
+        @media (max-width: 720px) {
+            .product-list {
+                grid-template-columns: 1fr;
+            }
 
-    .product img {
-        width: 100%; /* Ajusta el ancho de las imágenes */
-        max-width: 100%; /* No se desborden */
-        height: auto;
-    }
-
-    .product .image-container {
-        flex-direction: column; /* Para que las imágenes se apilen verticalmente */
-        align-items: center; /* Centrar las imágenes */
-    }
-}
+            .product img {
+                width: 48%; /* Ajusta el ancho de las imágenes */
+                max-width: 100%; /* No se desborden */
+                height: auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -170,7 +164,7 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="chico.html">Infantil</a></li>
                 <li><a href="chamarras.html">Chamarras</a></li>
-<li><a href="duos.html">Navideño Duo</a></li>
+                <li><a href="duos.html">Navideño Duo</a></li>
             </ul>
         </nav>
     </header>
