@@ -142,15 +142,23 @@
         }
 
         /* Responsividad */
-        @media (max-width: 720px) {
-            .product-list {
-                grid-template-columns: 1fr;
-            }
+        /* Responsividad */
+@media (max-width: 720px) {
+    .product-list {
+        grid-template-columns: 1fr;
+    }
 
-            .product img {
-                width: 100%;
-            }
-        }
+    .product img {
+        width: 80%; /* Ajusta el ancho de las imágenes */
+        max-width: 100%; /* No se desborden */
+        height: auto;
+    }
+
+    .product .image-container {
+        flex-direction: column; /* Para que las imágenes se apilen verticalmente */
+        align-items: center; /* Centrar las imágenes */
+    }
+}
     </style>
 </head>
 <body>
