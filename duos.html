@@ -93,25 +93,24 @@
             border-radius: 5px;
         }
 
-        .contact-button {
+        .color-box {
+            margin-top: 10px;
             text-align: center;
-            margin-top: 20px;
         }
 
-        .whatsapp-button {
-            background-color: #196F3D;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-size: 18px;
-            border-radius: 5px;
+        .color-box span {
             display: inline-block;
-            transition: background-color 0.3s ease;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #196F3D;
+            border-radius: 50%;
+            margin: 5px;
         }
 
-        .whatsapp-button:hover {
-            background-color: #145A32;
-        }
+        .color-white { background-color: #FFFFFF; }
+        .color-black { background-color: #000000; }
+        .color-blue { background-color: #0000FF; }
+        .color-red { background-color: #FF0000; }
 
         footer {
             background-color: #F5F5DC;
@@ -178,6 +177,11 @@
                 </div>
                 <h3>Playera Prime</h3>
                 <p>$64.90</p>
+                <div class="color-box">
+                    <strong>Colores disponibles:</strong>
+                    <span class="color-white"></span>
+                    <span class="color-black"></span>
+                </div>
             </div>
             <div class="product">
                 <div class="image-container">
@@ -186,6 +190,12 @@
                 </div>
                 <h3>Playera London</h3>
                 <p>$74.90</p>
+                <div class="color-box">
+                    <strong>Colores disponibles:</strong>
+                    <span class="color-black"></span>
+                    <span class="color-blue"></span>
+                    <span class="color-red"></span>
+                </div>
             </div>
         </section>
     </main>
