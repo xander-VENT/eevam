@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda</title>
-    <link rel="stylesheet" href="sueter.css">
+    <link rel="stylesheet" href="chamarras.css">
 </head>
 <body>
     <header>
@@ -26,33 +26,62 @@
                 <img src="mol1.jpg" alt="Playera blanca">
                 <h3>Playera Prime</h3>
                 <p>$64.90</p>
+                <div class="color-box">
+                    <strong>Colores disponibles:</strong>
+                    <span class="color-white"></span>
+                    <span class="color-black"></span>
+                </div>
             </div>
             <div class="product">
                 <img src="mol2.jpg" alt="Playera negra">
                 <h3>Playera Prime</h3>
                 <p>$64.90</p>
+                <div class="color-box">
+                    <strong>Colores disponibles:</strong>
+                    <span class="color-white"></span>
+                    <span class="color-black"></span>
+                </div>
             </div>
             <div class="product">
                 <img src="mol3.jpg" alt="Playera azul">
                 <h3>Playera London</h3>
                 <p>$74.90</p>
+                <div class="color-box">
+                    <strong>Colores disponibles:</strong>
+                    <span class="color-blue"></span>
+                    <span class="color-black"></span>
+                </div>
             </div>
             <div class="product">
                 <img src="mol4.jpg" alt="Playera blanca">
                 <h3>Playera Prime</h3>
                 <p>$64.90</p>
+                <div class="color-box">
+                    <strong>Colores disponibles:</strong>
+                    <span class="color-white"></span>
+                    <span class="color-red"></span>
+                </div>
             </div>
             <div class="product">
                 <img src="mol5.jpg" alt="Playera negra">
                 <h3>Playera Prime</h3>
                 <p>$64.90</p>
+                <div class="color-box">
+                    <strong>Colores disponibles:</strong>
+                    <span class="color-black"></span>
+                    <span class="color-blue"></span>
+                </div>
             </div>
             <div class="product">
                 <img src="mol6.jpg" alt="Playera azul">
                 <h3>Playera London</h3>
                 <p>$74.90</p>
+                <div class="color-box">
+                    <strong>Colores disponibles:</strong>
+                    <span class="color-blue"></span>
+                    <span class="color-red"></span>
+                </div>
             </div>
-            <!-- Agrega más productos si es necesario -->
         </section>
 
         <div class="contact-button" id="contacto">
@@ -75,31 +104,25 @@
             </div>
             <div class="footer-info">
                 <h4>Redes Sociales</h4>
-                
                 <p><a href="https://www.instagram.com/eevam_oficial/" target="_blank">Instagram</a></p>
-                
             </div>
         </div>
     </footer>
 
-    <!-- Script para controlar el menú -->
-   <script>
-    // Script para manejar la apertura y cierre del menú
-    const menuToggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu');
-    const menuLinks = document.querySelectorAll('.menu a');
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+        const menuLinks = document.querySelectorAll('.menu a');
 
-    // Abrir o cerrar el menú al hacer clic en el botón
-    menuToggle.addEventListener('click', function() {
-        menu.classList.toggle('show');
-    });
-
-    // Cerrar el menú cuando se hace clic en un enlace
-    menuLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            menu.classList.remove('show');
+        menuToggle.addEventListener('click', function() {
+            menu.classList.toggle('show');
         });
-    });
-</script>
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                menu.classList.remove('show');
+            });
+        });
+    </script>
 </body>
 </html>
